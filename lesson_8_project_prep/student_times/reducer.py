@@ -2,6 +2,7 @@
 
 import sys
 
+
 def get_max(dic):
     vals = [value for key, value in dic.items()]
     max_val = max(vals)
@@ -21,7 +22,7 @@ def reducer():
 
             key_max = get_max(dict_hours)
             for key in key_max:
-                print('{0}\t{1}'.format(actual_user, key))
+                print '{0}\t{1}'.format(actual_user, key)
 
             actual_user = line[0]
             dict_hours = {}
@@ -35,7 +36,7 @@ def reducer():
     if actual_user != None:
         key_max = get_max(dict_hours)
         for key in key_max:
-            print('{0}\t{1}'.format(actual_user, key))
+            print '{0}\t{1}'.format(actual_user, key)
 
 
 reducer()
